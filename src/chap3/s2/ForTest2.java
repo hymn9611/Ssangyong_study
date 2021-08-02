@@ -20,7 +20,7 @@ public class ForTest2 {
 		System.out.println("Num : " + num); //3
 		System.out.println("check1 : " + check1); //3
 		
-		check1 = num++;
+		check1 = num++; //check1 = num; 수행후, ++연산 수행
 		System.out.println("Num : " + num); //4
 		System.out.println("check1 : " + check1); //3
 		

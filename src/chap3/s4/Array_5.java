@@ -39,18 +39,22 @@ public class Array_5 {
 			
 			switch(menu) {
 			case 1:
-				for(int i=0; i<ar.length; i++) {
-					System.out.println(ar[i]);
+				if(ar.length>0) {
+					for(int i=0; i<ar.length; i++) {
+						System.out.println(ar[i]);
+					}
+				} else {
+					System.out.println("Data가 없습니다.");
 				}
-				System.out.println("정보가 출력되었습니다.");
 				break;
 			case 2:
+				System.out.println("추가할 숫자를 입력해주세요.");
+				int data = sc.nextInt();
+				
 				int[] ar2 = new int[ar.length+1];
 				for(int i=0; i<ar.length; i++) { //작은배열
 					ar2[i] = ar[i];
 				}
-				System.out.println("추가할 숫자를 입력해주세요.");
-				int data = sc.nextInt();
 				ar2[ar.length]=data;
 				System.out.println(data + " 정보가 추가되었습니다.");
 				ar=ar2;

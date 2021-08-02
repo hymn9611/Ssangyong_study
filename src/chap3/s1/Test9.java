@@ -2,7 +2,7 @@ package chap3.s1;
 
 public class Test9 {
 	public static void main(String[] args) {
-		System.out.println("==== TEst9 Start ====");
+		System.out.println("==== Test9 Start ====");
 		
 		boolean check = true;
 		//not연산을 통해서 check의 true값이 false로 변경이 된다.

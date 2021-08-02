@@ -31,7 +31,7 @@ public class ForTest6 {
 				break;
 			}else {
 				System.out.println("아이디와 비밀번호가 일치하지 않습니다.");
-//				System.out.println("기회가 " + (4-i) + "회 남아있습니다.");
+				System.out.println("기회가 " + (4-i) + "회 남아있습니다.");
 			}
 //			
 //			if(i==4) {
@@ -41,7 +41,7 @@ public class ForTest6 {
 		
 		//for문의 종료 조건은 로그인이 성공했을 때(break), 5회 실패시 이다.
 		//for문 밖에서 이를 출력하도록 하자
-		//2. for종료 조건 로그인성공과 5번 모두 실
+		//2. for종료 조건 로그인성공과 5번 모두 실패
 		//flag가 true이면 로그인성공, false이면 로그인 실패
 		if(flag == true) {
 			System.out.println("로그인에 성공하셨습니다.");

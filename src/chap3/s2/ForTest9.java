@@ -8,7 +8,7 @@ public class ForTest9 {
 		System.out.println("==== ForTest9 Start ====");
 		
 		/*
-		 * FPS게임을 하는데 탄창이 3개가 있다. 한 탄창에는 30개의 탄이 들어있다.
+		 * FPS게임을 하는데 탄창이 3개가 있으며 한 탄창에는 30개의 탄이 들어있다.
 		 * 시작하자마자 탄을 다 쓰려고 한다.
 		 * 1번은 단발, 2번은 점사이며 1번은 '탕'소리가 30회, 2번은 '타타탕'소리가 10회 나도록 한다.
 		 */
@@ -20,14 +20,13 @@ public class ForTest9 {
 			int select = sc.nextInt();
 			String sound = "탕";
 //			int count = 30;
-			
 			int num = 1;
 			if(select != 1) {
 				sound = "타타탕";
 //				count = 10;
 				num = 3;
 			}
-			
+//			for(int i=0; i<count; i++) {
 			for(int i=0; i<30; i=i+num) {
 				System.out.println(sound);
 			}

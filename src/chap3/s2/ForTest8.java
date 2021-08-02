@@ -27,6 +27,7 @@ public class ForTest8 {
 		int m = sc.nextInt();//1
 		System.out.println("초 입력");
 		int s = sc.nextInt();//5
+		
 		boolean flag = false;
 		for(int min=0;min<60;min++) {
 			for(int sec=0;sec<60;sec++) {

@@ -42,7 +42,7 @@ public class WhileTest3 {
 				
 				if(id==id2 && pw==pw2) {
 					System.out.println("로그인에 성공했습니다.");
-					break;
+					break; //while 반복문 탈출!
 				} else {
 					System.out.println("로그인에 실패하여 메뉴로 돌아갑니다.");
 				}
@@ -65,10 +65,10 @@ public class WhileTest3 {
 			System.out.println("시작 보유 골드량은 " + gold + "입니다.");
 			
 			//레벨15가 달성되면 끝나는 반복문이니 for을 사용하자
-			for(level=1; level<15; level++) { //15만렙, 14레벨 때 사냥하고 레벨업 후 종
+			for(level=1; level<15; level++) { //15만렙, 14레벨 때 사냥하고 레벨업 후 종료예정
 				//골드지급
 				if(level%5 == 0) {
-					//level * 200; (15일 때 지급을 못함
+					//level * 200; (15일 때 지급을 못하는 코드)
 					gold = gold + level/5*1000;
 					System.out.println(gold + level/5*1000 + "gold 지급");
 				}
