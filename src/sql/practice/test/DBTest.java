@@ -32,8 +32,8 @@ public class DBTest {
 			
 			//5. SQL문 미리보내기
 			st = con.prepareStatement(sql);
-			
-			//6. 최종 전송 후 결과처리
+			//6. ? 작성
+			//7. 최종 전송 후 결과처리
 			rs = st.executeQuery();
 			
 			//**Q : while을 쓰는 경우와 for을 쓰는 경우는??
@@ -42,6 +42,7 @@ public class DBTest {
 				System.out.print(rs.getString("DEPARTMENT_NAME")+"\t");
 				System.out.println(rs.getInt("MANAGER_ID"));
 				System.out.println("-------------------------------------");
+				//getInt()안의 내용은 컬럼명이 아니라 DB에서 출력된 결과의 컬럼명이다.
 			}
 		} catch(Exception e) {
 			e.printStackTrace();
